@@ -44,7 +44,7 @@ return [
         'api' => [
             'driver' => 'jwt',
             'provider' => 'users',
-            'hash' => false,
+            
         ],
     ],
 
@@ -68,7 +68,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => App\Models\User::class,
+            'model' => App\User::class,
         ],
 
         // 'users' => [
@@ -112,6 +112,6 @@ return [
     |
     */
 
-    'password_timeout' => 10800,
+    
 
 ];
